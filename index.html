@@ -1,139 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>What Screens Want</title>
-	<link href="reset.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
-</head>
-<body>
-	<header>
-		<h1>What Screens Want</h1>
-		<p>By Frank Chimero</p>
-		<p><time datetime="2013-11-14">November 14, 2013</time></p>
-	</header>
-	<main>
-		<nav>
-		<ul>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>What Screens Want</title>
+		<link href="reset.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<h1>What Screens Want</h1>
+			<p>By Frank Chimero</p>
+			<p><time datetime="2013-11-14">November 14, 2013</time></p>
+		</header>
+		<main>
+			<nav>
+				<ol>
+					<li>
+						<button command="show-modal" commandfor="aspirin">
+							<span class="coords">20° 08' 05" N<br>01° 19' 16.091" E</span>
+							<span class="name">The Aspirin</span>
+						</button>
+					</li>
+					<li>
+						<button command="show-modal" commandfor="software">
+							<span class="coords">19° 15' 06" N<br>20° 23' 01.180" E</span>
+							<span class="name">Software</span>
+						</button>
+					</li>
+					<li>
+						<button command="show-modal" commandfor="horse">
+							<span class="coords">20° 08' 05" N<br>08° 15' 18.195" E</span>
+							<span class="name">The Horse</span>
+						</button>
+					</li>
+					<li>
+						<button command="show-modal" commandfor="designing">
+							<span class="coords">04° 05' 19" N<br>06° 15' 18.190" E</span>
+							<span class="name">Designing for Screens</span>
+						</button>
+					</li>
+					<li>
+						<button command="show-modal" commandfor="animation">
+							<span class="coords">01° 14' 09" N<br>13° 01' 20.915" E</span>
+							<span class="name">Animation</span>
+						</button>
+					</li>
+					<li>
+						<button command="show-modal" commandfor="human-agency">
+							<span class="coords">01° 02' 19" N<br>20° 18' 01.320" E</span>
+							<span class="name">Human Agency</span>
+						</button>
+					</li>
+				</ol>
+			</nav>
 
-			<li>
-				<button command="show-modal" commandfor="aspirin">
-					<span class="coords">20° 08' 05" N<br>01° 19' 16.091" E</span>
-					<span class="name">The Aspirin</span>
-				</button>
-			</li>
+			<article>
 
-			<li>
-				<button command="show-modal" commandfor="software">
-					<span class="coords">19° 15' 06" N<br>20° 23' 01.180" E</span>
-					<span class="name">Software</span>
-				</button>
-			</li>
-
-			<li>
-				<button command="show-modal" commandfor="horse">
-					<span class="coords">20° 08' 05" N<br>08° 15' 18.195" E</span>
-					<span class="name">The Horse</span>
-				</button>
-			</li>
-
-			<li>
-				<button command="show-modal" commandfor="designing">
-					<span class="coords">04° 05' 19" N<br>06° 15' 18.190" E</span>
-					<span class="name">Designing for Screens</span>
-				</button>
-			</li>
-
-			<li>
-				<button command="show-modal" commandfor="animation">
-					<span class="coords">01° 14' 09" N<br>13° 01' 20.915" E</span>
-					<span class="name">Animation</span>
-				</button>
-			</li>
-
-			<li>
-				<button command="show-modal" commandfor="human-agency">
-					<span class="coords">01° 02' 19" N<br>20° 18' 01.320" E</span>
-					<span class="name">Human Agency</span>
-				</button>
-			</li>
-
-		</ul>
-		</nav>
-
-		<article>
-			<section>
+				<!-- CHAPTER 01 -->
 				<dialog id="aspirin">
-				<button command="close" commandfor="aspirin">X</button>
-				<h2>The Aspirin</h2>
-				<p>These thoughts on digital canvases were first presented on <a href="https://2013.buildconf.com/#conference">November 14, 2013 at Build in Belfast, N. Ireland.</a> This page is an adaptation of my talk.</p>
-				<p>The past two years were a wild chase for answers. I read books, looked at art, listened to my heroes, and sketched out scratchy thoughts of my own to search for any sensible response to a question that had been lodged in my head for months: What does it mean to natively design for screens?</p>
-				<p>I couldn't get the question out of my head. I tried to find its contours, and just as I thought I had made some progress on a response, a new part of the picture appeared and showed I only had a shadow of an answer. After many failures, I began to see which approaches worked better. The way toward an answer is never what you expect, so I was surprised that mine began with a routine trip to the pharmacy.</p>
+					<button command="close" commandfor="aspirin">x</button>
+					<h2>The Aspirin</h2>
+					<p>These thoughts on digital canvases were first presented on <a href="https://2013.buildconf.com/#conference">November 14, 2013 at Build in Belfast, N. Ireland.</a> This page is an adaptation of my talk.</p>
+					<p>The past two years were a wild chase for answers. I read books, looked at art, listened to my heroes, and sketched out scratchy thoughts of my own to search for any sensible response to a question that had been lodged in my head for months: What does it mean to natively design for screens?</p>
+					<p>I couldn't get the question out of my head. I tried to find its contours, and just as I thought I had made some progress on a response, a new part of the picture appeared and showed I only had a shadow of an answer. After many failures, I began to see which approaches worked better. The way toward an answer is never what you expect, so I was surprised that mine began with a routine trip to the pharmacy.</p>
 
-				<p class="image">(image of aspirin)</p>
+					<p class="image">(image of aspirin)</p>
 
-				<p>These are aspirin pills. I'm not big on medicating, so my aspirin purchase was the first in a long time. When I rattled a few of the pills out of the bottle, I noticed they seemed to be a lot smaller than I remembered.</p>
-				<p>I went online to see what was going on. It seems pharmaceutical companies have been able to make the active drug in aspirin more effective in the past few decades. The tiny aspirin pills are hardly aspirin at all, and the drug's current version is so potent and physically minuscule that it must be padded with a filler substance to make the pill large enough to pick up and put in your mouth. Literally, you couldn't grasp it without the padding.</p>
-				<p>When I read that, it occurred to me that we've been living through a similar situation with computers. I mean, have you looked at technology recently and taken stock? Things have changed under us. We take it for granted, because the transition was so fast and thorough.</p>
+					<p>These are aspirin pills. I'm not big on medicating, so my aspirin purchase was the first in a long time. When I rattled a few of the pills out of the bottle, I noticed they seemed to be a lot smaller than I remembered.</p>
+					<p>I went online to see what was going on. It seems pharmaceutical companies have been able to make the active drug in aspirin more effective in the past few decades. The tiny aspirin pills are hardly aspirin at all, and the drug's current version is so potent and physically minuscule that it must be padded with a filler substance to make the pill large enough to pick up and put in your mouth. Literally, you couldn't grasp it without the padding.</p>
+					<p>When I read that, it occurred to me that we've been living through a similar situation with computers. I mean, have you looked at technology recently and taken stock? Things have changed under us. We take it for granted, because the transition was so fast and thorough.</p>
 
-				<p class="image">(image of cellular phone)</p>
+					<p class="image">(image of cellular phone)</p>
 
-				<p>I remember my first cellular phone. It came in a bag and we called it a car phone. Now the phone fits in your pocket and you can use the damn thing to <em>start</em> a car. It's remarkable.</p>
+					<p>I remember my first cellular phone. It came in a bag and we called it a car phone. Now the phone fits in your pocket and you can use the damn thing to <em>start</em> a car. It's remarkable.</p>
 
-				<p class="image">(image of first computer)</p>
+					<p class="image">(image of first computer)</p>
 
-				<p>And I think about my first computer. The monitor sat on top the computer like an ugly, stupid hat: one big, dull box on top of another. But now they're all the same thing. Your computer is a big, shiny pane of glass that spans the length of your desk.</p>
+					<p>And I think about my first computer. The monitor sat on top the computer like an ugly, stupid hat: one big, dull box on top of another. But now they're all the same thing. Your computer is a big, shiny pane of glass that spans the length of your desk.</p>
 
-				<p class="image">(image of iMac)</p>
+					<p class="image">(image of iMac)</p>
 
-				<p>So just like the aspirin, we've made the guts of our computers more potent, powerful, and smaller. Chances are your computer's footprint is entirely comprised of its screen. Even an iMac is just a screen with a kickstand. And now, because of touch screens, we're using the screens for input as well as output. The whole feedback cycle of using a computer is entirely screen-based. It's no wonder that the average person's conception of a computer is the screen.</p>
+					<p>So just like the aspirin, we've made the guts of our computers more potent, powerful, and smaller. Chances are your computer's footprint is entirely comprised of its screen. Even an iMac is just a screen with a kickstand. And now, because of touch screens, we're using the screens for input as well as output. The whole feedback cycle of using a computer is entirely screen-based. It's no wonder that the average person's conception of a computer is the screen.</p>
 
-				<p>So, if computers are like aspirin, and we've been making the computers smaller and smaller, where's the necessary padding that allows us to grasp things? I stumbled over the question for a while. Then it hit me.</p>
+					<p>So, if computers are like aspirin, and we've been making the computers smaller and smaller, where's the necessary padding that allows us to grasp things? I stumbled over the question for a while. Then it hit me.</p>
 
-				<blockquote>The padding isn't around the screens. It's in them.</blockquote>
+					<blockquote>The padding isn't around the screens. It's in them.</blockquote>
 
-				<p>Manipulating data, one of the original purposes of computers, is often too abstract for most-even me. It helps to make things visible. Graphical user interfaces unpack some of the complexity in computing, and their implementation became a key to unlocking computers for most people in the '80s and '90s. The interfaces we build are where we put the padding. You give a user something to grasp onto when you make a metaphor solid. In the case of software on a screen, the metaphors visually explain the functions of an interface, and provide a bridge from a familiar place to a less known area by suggesting a tool's function and its relationship to others.</p>
+					<p>Manipulating data, one of the original purposes of computers, is often too abstract for most-even me. It helps to make things visible. Graphical user interfaces unpack some of the complexity in computing, and their implementation became a key to unlocking computers for most people in the '80s and '90s. The interfaces we build are where we put the padding. You give a user something to grasp onto when you make a metaphor solid. In the case of software on a screen, the metaphors visually explain the functions of an interface, and provide a bridge from a familiar place to a less known area by suggesting a tool's function and its relationship to others.</p>
 
-				<p class="image">(image of Trash Bin)</p>
+					<p class="image">(image of Trash Bin)</p>
 
-				<p>For instance, if I say <em>"This is a Trash Bin,"</em> you may not know a computer's file management system or directory structures, but you've got a pretty good idea of how trash bins work, so you can deduce that the unwanted files go in the trash bin, and you'll be able to retrieve them until the bin is emptied.</p>
+					<p>For instance, if I say <em>"This is a Trash Bin,"</em> you may not know a computer's file management system or directory structures, but you've got a pretty good idea of how trash bins work, so you can deduce that the unwanted files go in the trash bin, and you'll be able to retrieve them until the bin is emptied.</p>
 
-				<p>Metaphors are assistive devices for understanding.</p>
-
-
-
-				<p>I think we all know that some of the aspirin pill's padding is necessary in computing. We need abstractions, otherwise we'd be writing code in machine language or Assembly, there'd be no work designing interfaces, and users wouldn't understand much unless they took the years to learn everything from the ground up.</p>
-
-				<p>Computers, after all, are just shaky towers of nested abstractions: from the code that tells them what to do, to the interfaces that suggest to the user what's possible to do with them. Each level of abstraction becomes an opportunity to make work more efficient, communicate more clearly, and assist understanding. Of course, abstractions also become chances to complicate what was clear, slow down what was fast, and fuck up what was perfectly fine.</p>
-
-				<p>Choosing the proper amount of abstraction is tricky, because each user comes to what you're making with their own amount of experience. Experience gaps are not unique to computing, but I think it matters more here than in many other situations.</p>
-
-				<p class="image">(image of your hand and your brain)</p>
-
-				<p>The best way to understand why is to look at the differences between your hands and your brain. Your hands can't change size, but your mind can: if you're paying attention, your brain becomes more keen to experiences over time. So while the size of an aspirin pill is constrained by your stubby little fingers, your brain can normalize the patterns of an interface and make way for more nuanced abstractions. With enough time and exposure, a user can shed the padding and metaphors that become dead weight, like taking the training wheels off a bike.</p>
-
-				<p>We've been living through that shedding process, and the interfaces of iOS 7 and Windows Metro suggest the keenness of our minds and our adeptness at navigating interfaces. Like them or not, Metro and iOS7 are major touchstones in our relationship to computing, because they signify that we're beginning to accept a flexible medium on its own terms.</p>
-
-				<p>But it's not the first time we've done this. Let's go back 35 years.</p>
+					<p>Metaphors are assistive devices for understanding.</p>
 
 
 
-				<p>I'd like to show you a video clip from a BBC series called <cite>Connections</cite>, hosted and written by James Burke.</p>
+					<p>I think we all know that some of the aspirin pill's padding is necessary in computing. We need abstractions, otherwise we'd be writing code in machine language or Assembly, there'd be no work designing interfaces, and users wouldn't understand much unless they took the years to learn everything from the ground up.</p>
 
-				<p class="video">(video of James Burke)</p>
+					<p>Computers, after all, are just shaky towers of nested abstractions: from the code that tells them what to do, to the interfaces that suggest to the user what's possible to do with them. Each level of abstraction becomes an opportunity to make work more efficient, communicate more clearly, and assist understanding. Of course, abstractions also become chances to complicate what was clear, slow down what was fast, and fuck up what was perfectly fine.</p>
 
-				<p>Sound familiar? The progression of plastics is the same as screens and software. It's a pattern of malleable mediums: if something can be anything, it usually becomes everything.</p>
+					<p>Choosing the proper amount of abstraction is tricky, because each user comes to what you're making with their own amount of experience. Experience gaps are not unique to computing, but I think it matters more here than in many other situations.</p>
 
-				<p>As a little formal exercise, let's take every time Burke says "plastic" and replace it with "software." (Please imagine I'm doing this in a charming British accent.)</p>
-			</dialog>
-			</section>
+					<p class="image">(image of your hand and your brain)</p>
+
+					<p>The best way to understand why is to look at the differences between your hands and your brain. Your hands can't change size, but your mind can: if you're paying attention, your brain becomes more keen to experiences over time. So while the size of an aspirin pill is constrained by your stubby little fingers, your brain can normalize the patterns of an interface and make way for more nuanced abstractions. With enough time and exposure, a user can shed the padding and metaphors that become dead weight, like taking the training wheels off a bike.</p>
+
+					<p>We've been living through that shedding process, and the interfaces of iOS 7 and Windows Metro suggest the keenness of our minds and our adeptness at navigating interfaces. Like them or not, Metro and iOS7 are major touchstones in our relationship to computing, because they signify that we're beginning to accept a flexible medium on its own terms.</p>
+
+					<p>But it's not the first time we've done this. Let's go back 35 years.</p>
 
 
-			<section>
+
+					<p>I'd like to show you a video clip from a BBC series called <cite>Connections</cite>, hosted and written by James Burke.</p>
+
+					<p class="video">(video of James Burke)</p>
+
+					<p>Sound familiar? The progression of plastics is the same as screens and software. It's a pattern of malleable mediums: if something can be anything, it usually becomes everything.</p>
+
+					<p>As a little formal exercise, let's take every time Burke says "plastic" and replace it with "software." (Please imagine I'm doing this in a charming British accent.)</p>
+				</dialog>
+
+				<!-- CHAPTER 02 -->
 				<dialog id="software">
-				<button command="close" commandfor="software">X</button>
-				<h2>Software</h2>
+					<button command="close" commandfor="software">x</button>
+					<h2>Software</h2>
 					<p>Have you noticed what's happened to software in the last ten years?</p>
 
 					<p class="image">(image of facebook)</p>
@@ -231,14 +225,11 @@
 
 					<p>Any reasonable person would say the best approach is somewhere in the middle, but both arguments fail because they are based on aesthetics. Leaning on the look of things is a tempting argument to make: screens are output devices, after all. But, it's a shallow answer to a deep question. I'll do my best to refute both of these arguments.</p>
 				</dialog>
-			</section>
 
-
-
-			<section>
+				<!-- CHAPTER 03 -->
 				<dialog id="horse">
-				<button command="close" commandfor="horse">X</button>
-				<h2>The Horse</h2>
+					<button command="close" commandfor="horse">x</button>
+					<h2>The Horse</h2>
 					<p>I'm going to use horses in this example, because horses are cool, and I need to circle back to them in a minute.</p>
 
 					<p class="image">(image of horse)</p>
@@ -305,13 +296,11 @@
 
 					<p>Muybridge's crazy horse experiment eventually led us to the familiar glow of the screen. If you're like me, and consider Muybridge's work as one of the main inroads to the creation of screens, it becomes apparent that web and interaction design are just as much children of filmmaking as they are of graphic design. Maybe even more so. After all, we both work on screens, and manage time, movement, and most importantly, change. So what does all of this mean? I think the grain of screens has been there since the beginning. It's not tied to an aesthetic. Screens don't care what the horses look like. They just want them to move. They want the horses to change.</p>
 				</dialog>
-			</section>
 
-
-			<section>
+				<!-- CHAPTER 04 -->
 				<dialog id="designing">
-				<button command="close" commandfor="designing">X</button>
-				<h2>Designing For Screens</h2>
+					<button command="close" commandfor="designing">x</button>
+					<h2>Designing For Screens</h2>
 					<p>Designing for screens is managing that change. To put a finer head on it, the grain of screens is something I call <em>flux</em>.</p>
 
 					<blockquote>Flux is the capacity for change.</blockquote>
@@ -371,14 +360,12 @@
 
 					<p>And last is a comment field with progressive disclosure. This method allows the designer to reduce UI components to their essence. Input forms are only revealed when necessary to avoid confusion, and the animation aids them in understanding the origin of the new form fields.</p>
 				</dialog>
-			</section>
 
+				<!-- CHAPTER 05 -->
 
-
-			<section>
 				<dialog id="animation">
-				<button command="close" commandfor="animation">X</button>
-				<h2>Animation</h2>
+					<button command="close" commandfor="animation">x</button>
+					<h2>Animation</h2>
 					<p>Movement, change, and animation are a lot more than ways to delight users: they are a functional method for design. These examples are essentially animated wireframes, but extra detail isn't needed. Designing how things change and move is enough for us to understand what they are and the relationships between them. You don't need the heavy-handed metaphor, because the information is baked into the element's behavior, not its aesthetics.</p>
 
 					<p>A designer's work is not only about how the things look, but also their behaviors in response to interaction, and the adjustments they make between their fixed states. In fact, designing the way elements adapt and morph in the in-between moments is half of your work as a designer. You're crafting the interstitials.</p>
@@ -405,16 +392,12 @@
 
 					<p>For example, a few years ago, I flew to Hong Kong from Chicago, and my brain just about broke because the flight path took us over the North Pole. I forgot that was even possible! My brain was so programmed with representations and maps that I, well, forgot that Earth is a sphere, and you can navigate it any which way you want-not just east and west. An abstraction's distortion blinded me to a portion of the reality. Abstractions always distort and omit, because they have to. The trick is to be mindful it is happening.</p>
 				</dialog>
-			</section>
 
+				<!-- CHAPTER 06 -->
 
-
-
-
-			<section>
 				<dialog id="human-agency">
-				<button command="close" commandfor="human-agency">X</button>
-				<h2>Human Agency</h2>
+					<button command="close" commandfor="human-agency">x</button>
+					<h2>Human Agency</h2>
 					<p>If I asked you to picture the world, you probably think of this.</p>
 
 					<p class="image">(image of map)</p>
@@ -458,13 +441,10 @@
 					<p>So the pep talk is that things are starting to suck, but there's a capacity for change in what we've made, who we are, and what we believe. Everything was made, and if we want, we can remake it how we see fit. We only need to want it.</p>
 					<p>And then we have to build it.</p>
 				</dialog>
-			</section>
-
-
-		</article>
-	</main>
-	<footer>
-		<p>Mapmakers — Alaia Niu & Hyunjin Kim @ 2026</p>
-	</footer>
-</body>
+			</article>
+		</main>
+		<footer>
+			<p>Mapmakers — Alaia Niu & Hyunjin Kim @ 2026</p>
+		</footer>
+	</body>
 </html>
