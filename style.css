@@ -84,6 +84,13 @@ dialog {
 
 dialog h2 {
 	font-size: var(--size-h2);
+	font-weight: var(--text-bd);
+	/* spacing between the h2 title and paragraph below */
+	margin-block-end: var(--spacing-md);
+	line-height: 1;
+	text-align: center;
+	/* divider line */
+	border-block-end: var(--border-width) solid var(--color-fg);
 }
 
 dialog::backdrop {
