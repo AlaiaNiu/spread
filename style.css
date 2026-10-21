@@ -11,8 +11,8 @@
 	--text-bd: 700;
 
 	--size-body: 1rem;
-	--size-h1: 3rem;
-	--size-h2: 6rem;
+	--size-h1: 2rem;
+	--size-h2: 3rem;
 
 	--spacing-sm: 1rem;
 	--spacing-md: 2rem;
@@ -32,34 +32,44 @@ header, main, footer {
 }
 
 header h1 {
-	font-;
 	font-family: var(--font-dspl);
 	font-size: var(--size-h1);
 }
 
 nav ol {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-sm);
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-sm);
 }
 
 nav li {
-    text-align: center;
+	text-align: center;
 }
 
 nav button {
-    border: 0;
-    background-color: var(--color-bg);
-    color: var(--color-fg);
-    font-family: var(--font-body), sans-serif;
-    font-size: var(--size-body);
-    padding-block: 0.3rem;
+	border: 0;
+	background-color: var(--color-bg);
+	color: var(--color-fg);
+	font-family: var(--font-body), sans-serif;
+	font-size: var(--size-body);
+	padding-block: 0.3rem;
 }
 
 nav .coords, nav .name {
-    display: block;
+	display: block;
 }
 
 nav .name {
-    font-size: var(--size-body);
+	font-size: var(--size-body);
+}
+
+dialog {
+	padding-block: var(--spacing-sm);
+	padding-inline: var(--spacing-sm);
+	background-color: var(--color-panel);
+	color: var(--color-fg);
+}
+
+dialog h2 {
+	font-size: var(--size-h2);
 }
