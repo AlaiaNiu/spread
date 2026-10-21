@@ -32,6 +32,34 @@ header, main, footer {
 }
 
 header h1 {
+	font-;
 	font-family: var(--font-dspl);
 	font-size: var(--size-h1);
+}
+
+nav ol {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+nav li {
+    text-align: center;
+}
+
+nav button {
+    border: 0;
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-body), sans-serif;
+    font-size: var(--size-body);
+    padding-block: 0.3rem;
+}
+
+nav .coords, nav .name {
+    display: block;
+}
+
+nav .name {
+    font-size: var(--size-body);
 }
