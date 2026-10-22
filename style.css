@@ -64,7 +64,7 @@ header {
 
 header h1 {
 	font-family: var(--font-body);
-	font-size: 0.75rem;
+	font-size: calc(var(--size-body) * 0.75);
 	font-weight: var(--text-bd);
 	line-height: var(--spacing-sm);
 	border-block-start: var(--border-width) solid var(--color-fg);
@@ -72,7 +72,7 @@ header h1 {
 }
 
 header p {
-	font-size: 0.75rem;
+	font-size: calc(var(--size-body) * 0.75);
 	line-height: var(--spacing-xs);
 	padding-block-start: 0.4rem;
 }
@@ -149,7 +149,7 @@ nav .coords {
 
 nav .name {
 	display: inline-block;
-	font-size: 0.75rem;
+	font-size: calc(var(--size-body) * 0.75);
 	font-weight: var(--text-bd);
 	line-height: var(--spacing-sm);
 	border-block-end: var(--border-width) solid var(--color-fg);
@@ -161,7 +161,7 @@ footer {
 	margin-inline: var(--spacing-sm);
 	padding-inline: 0;
 	padding-block-start: 0.2rem;
-	font-size: 0.75rem;
+	font-size: calc(var(--size-body) * 0.75);
 	line-height: var(--spacing-sm);
 	display: flex;
 	justify-content: space-between;
