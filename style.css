@@ -15,7 +15,7 @@
 	--font-body: "Noto Sans", sans-serif;
 	--font-dspl: "Courier Prime", monospace;
 
-	/* font wight */
+	/* font weight */
 	--text-rg: 400;
 	--text-md: 500;
 	--text-bd: 700;
@@ -64,7 +64,7 @@ header {
 
 header h1 {
 	font-family: var(--font-body);
-	font-size: calc(var(--size-body) * 0.75);
+	font-size: var(--size-small);
 	font-weight: var(--text-bd);
 	line-height: var(--spacing-sm);
 	border-block-start: var(--border-width) solid var(--color-fg);
@@ -72,7 +72,7 @@ header h1 {
 }
 
 header p {
-	font-size: calc(var(--size-body) * 0.75);
+	font-size: var(--size-small);
 	line-height: var(--spacing-xs);
 	padding-block-start: var(--spacing-xs);
 }
@@ -149,7 +149,7 @@ nav .coords {
 
 nav .name {
 	display: inline-block;
-	font-size: calc(var(--size-body) * 0.75);
+	font-size: var(--size-small);
 	font-weight: var(--text-bd);
 	line-height: var(--spacing-sm);
 	border-block-end: var(--border-width) solid var(--color-fg);
@@ -161,7 +161,7 @@ footer {
 	margin-inline: var(--spacing-sm);
 	padding-inline: 0;
 	padding-block-start: 0.2rem;
-	font-size: calc(var(--size-body) * 0.75);
+	font-size: var(--size-small);
 	line-height: var(--spacing-sm);
 	display: flex;
 	justify-content: space-between;
@@ -244,12 +244,6 @@ dialog > button {
 
 /* DESKTOP */
 @media (width >= 1100px) {
-	nav {
-		inline-size: 100%;
-		max-inline-size: none;
-		margin-inline: auto;
-	}
-
 	nav ol {
 		display: grid;
 		/* 6 x 6 grid, each item sits on the diagonal below */
@@ -258,13 +252,16 @@ dialog > button {
 	}
 
 	nav li {
+		/* each item fits its grid cell */
 		inline-size: auto;
 	}
 
+	/* remove the alignment set for items 2，4，and 6 on mobile version */
 	nav li:nth-child(even) {
 		align-self: auto;
 	}
 
+	/* each item one column right and one row down */
 	nav li:nth-child(1) {
 		grid-column: 1;
 		grid-row: 1;
