@@ -1,7 +1,7 @@
 /* VARIABLES */
 :root {
-	--color-bg: white;
 	--color-fg: black;
+	--color-bg: white;
 
 
 	/* chapter colors for modal */
@@ -22,9 +22,9 @@
 
 	/* font sizes */
 	--size-body: 1rem;
-	--size-small: calc(var(--size-body) * 0.75);
 	--size-h1: 1.5rem;
 	--size-h2: 3rem;
+	--size-small: calc(var(--size-body) * 0.75);
 
 	--spacing-xs: 0.5rem;
 	--spacing-sm: 1rem;
@@ -52,6 +52,7 @@ body {
 }
 
 header, main, footer {
+	padding-block: var(--spacing-sm);
 	padding-block: var(--spacing-sm);
 	padding-inline: var(--spacing-sm);
 }
