@@ -3,8 +3,6 @@
 	--color-fg: black;
 	--color-bg: white;
 
-	margin: 0.5in;
-	print-color-adjust: exact;
 
 	/* chapter colors for modal */
 	--color-modal-1: #e4f0a8;
