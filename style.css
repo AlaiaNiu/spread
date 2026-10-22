@@ -22,7 +22,7 @@
 
 	/* font sizes */
 	--size-body: 1rem;
-	--size-small: calc(var(--size-body) * 0.75)
+	--size-small: calc(var(--size-body) * 0.75);
 	--size-h1: 2rem;
 	--size-h2: 3rem;
 
@@ -67,7 +67,7 @@ header h1 {
 	font-size: 0.75rem;
 	font-weight: var(--text-bd);
 	line-height: var(--spacing-sm);
-	border-block-start: 0.0625rem solid var(--color-fg);
+	border-block-start: var(--border-width) solid var(--color-fg);
 	padding-block-start: 0.4rem;
 }
 
@@ -87,7 +87,7 @@ header p:nth-child(3) {
 	grid-column: 2;
 	grid-row: 1;
 	text-align: right;
-	border-block-start: 1px solid var(--color-fg);
+	border-block-start: var(--border-width) solid var(--color-fg);
 }
 
 /* MAIN */
@@ -152,12 +152,12 @@ nav .name {
 	font-size: 0.75rem;
 	font-weight: var(--text-bd);
 	line-height: var(--spacing-sm);
-	border-block-end: 0.0625rem solid var(--color-fg);
+	border-block-end: var(--border-width) solid var(--color-fg);
 }
 
 /* FOOTER */
 footer {
-	border-block-start: 0.0625rem solid var(--color-fg);
+	border-block-start: var(--border-width) solid var(--color-fg);
 	margin-inline: var(--spacing-sm);
 	padding-inline: 0;
 	padding-block-start: 0.2rem;
@@ -234,7 +234,7 @@ dialog > button {
 .image, .gif, .video {
 	background-color: rgba(255, 255, 255, 0.5);
 	color: black;
-	border: 0.1rem solid black;
+	border: var(--border-width) solid black;
 	padding-block: var(--spacing-sm);
 	padding-inline: var(--spacing-md);
 	font-family: var(--font-dspl);
@@ -243,7 +243,7 @@ dialog > button {
 }
 
 /* DESKTOP */
-@media (width >= 1000px) {
+@media (width >= 1100px) {
 	nav {
 		inline-size: 100%;
 		max-inline-size: none;
