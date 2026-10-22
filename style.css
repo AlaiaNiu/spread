@@ -4,14 +4,25 @@
 	--color-fg: black;
 	--color-panel: #a9dddb;
 
+	/* chapter colors for modal */
+	--color-modal-1: #e4f0a8;
+	--color-modal-2: #ee8a80;
+	--color-modal-3: #ebe57a;
+	--color-modal-4: #b8c4f4;
+	--color-modal-5: #bfe0bf;
+	--color-modal-6: #f2dd85;
+
 	--font-body: "Noto Sans", sans-serif;
 	--font-dspl: "Courier Prime", monospace;
 
+	/* font wight */
 	--text-rg: 400;
 	--text-md: 500;
 	--text-bd: 700;
 
+	/* font sizes */
 	--size-body: 1rem;
+	--size-small: calc(var(--size-body) * 0.75)
 	--size-h1: 2rem;
 	--size-h2: 3rem;
 
@@ -20,7 +31,10 @@
 	--spacing-md: 2rem;
 
 	--dialog-gap: 2rem;
+
 	--border-width: 0.125rem;
+
+	--color-backdrop: rgb(0 0 0 / 0.6);
 }
 
 /* PAGE */
@@ -30,6 +44,8 @@ body {
 	font-family: var(--font-body);
 	font-size: var(--size-body);
 	line-height: var(--spacing-md);
+
+	/* makes the page full-height so the footer stays at the bottom. */
 	min-block-size: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -65,14 +81,13 @@ header p:nth-child(2) {
 	grid-column: 2;
 	grid-row: 2;
 	text-align: right;
-
 }
 
 header p:nth-child(3) {
 	grid-column: 2;
 	grid-row: 1;
 	text-align: right;
-	border-block-start: 0.0625rem solid var(--color-fg);
+	border-block-start: 1px solid var(--color-fg);
 }
 
 /* MAIN */
@@ -105,6 +120,7 @@ nav li:nth-child(even) {
 	align-self: flex-end;
 }
 
+/* dot marker above each location - point on map */
 nav li::before {
 	content: "•";
 	display: block;
@@ -153,20 +169,25 @@ footer {
 
 /* DIALOG */
 dialog {
+	/* centers the fixed-position modal */
 	position: fixed;
 	inset: 0;
 	margin: auto;
+
+	/* keep a gap around the modal; scrolling content inside it. */
 	inline-size: 90%;
 	max-inline-size: 40rem;
 	max-block-size: 85vh;
 	overflow-y: auto;
+
 	padding-block: var(--spacing-md);
 	padding-inline: var(--spacing-md);
-	background-color: var(--color-panel);
+	background-color: var(--color-chapter);
 }
 
+/* Dim the page behind the modal，60% black */
 dialog::backdrop {
-	background-color: rgb(0 0 0 / 0.8);
+	background-color: var(--color-backdrop);
 }
 
 dialog h2 {
@@ -175,6 +196,7 @@ dialog h2 {
 	font-family: var(--font-body);
 	line-height: 1;
 	text-align: center;
+	/* Spacing above and below to match the design - title in the middle. */
 	margin-block: 5rem;
 	padding-block-end: 7rem;
 	border-block-end: var(--border-width) solid var(--color-fg);
@@ -193,12 +215,20 @@ dialog > button {
 	inline-size: var(--spacing-md);
 	block-size: var(--spacing-md);
 	border: var(--border-width) solid var(--color-fg);
-	background-color: var(--color-panel);
+	background-color: var(--color-chapter);
 	color: var(--color-fg);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+
+/* chapter color */
+#the-aspirin { --color-chapter: var(--color-modal-1); }
+#beyond-the-box { --color-chapter: var(--color-modal-2); }
+#faster-horse { --color-chapter: var(--color-modal-3); }
+#what-screens-want { --color-chapter: var(--color-modal-4); }
+#in-flux { --color-chapter: var(--color-modal-5); }
+#human-agency { --color-chapter: var(--color-modal-6); }
 
 /* MEDIA PLACEHOLDERS */
 .image, .gif, .video {
@@ -222,10 +252,9 @@ dialog > button {
 
 	nav ol {
 		display: grid;
+		/* 6 x 6 grid, each item sits on the diagonal below */
 		grid-template-columns: repeat(6, 1fr);
 		grid-template-rows: repeat(6, 1fr);
-		justify-content: space-between;
-		gap: 0;
 	}
 
 	nav li {
