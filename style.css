@@ -181,9 +181,10 @@ dialog {
 	max-block-size: 85vh;
 	overflow-y: auto;
 
-	padding-block: var(--spacing-md);
+	padding-block: calc(var(--spacing-md) * 1.5);
 	padding-inline: var(--spacing-md);
 	background-color: var(--color-chapter);
+	padding-block-start: calc(var(--spacing-md) * 1.5);
 }
 
 /* Dim the page behind the modal，60% black */
@@ -197,15 +198,24 @@ dialog h2 {
 	font-family: var(--font-body);
 	line-height: 1;
 	text-align: center;
-	/* Spacing above and below to match the design - title in the middle. */
-	margin-block: 5rem;
-	padding-block-end: 7rem;
+	margin-block-start: 0;
+	margin-block-end: var(--spacing-md);
+	padding-block-end: calc(var(--spacing-md) * 1.5);
 	border-block-end: var(--border-width) solid var(--color-fg);
+}
+
+/* Coordinates above the modal title. */
+dialog .coords {
+	font-family: var(--font-dspl);
+	font-size: var(--size-body);
+	line-height: var(--spacing-sm);
+	text-align: center;
+	margin-block-end: var(--spacing-sm);
 }
 
 dialog p {
 	font-size: var(--size-body);
-	line-height: 1.4;
+	line-height: 1.5;
 	margin-block-end: var(--spacing-md);
 }
 
@@ -225,7 +235,6 @@ dialog > button {
 	justify-content: center;
 }
 
-/* Shared style for all quotes in chapter. */
 dialog blockquote {
 	padding-inline-start: var(--spacing-sm);
 	border-inline-start: var(--border-width) solid var(--color-fg);
