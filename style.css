@@ -254,6 +254,11 @@ dialog em {
 	font-style: italic;
 }
 
+dialog a {
+	font-style: italic;
+	text-decoration: underline;
+}
+
 /* CHAPTER COLOR */
 #the-aspirin { --color-chapter: var(--color-modal-1); }
 #beyond-the-box { --color-chapter: var(--color-modal-2); }
