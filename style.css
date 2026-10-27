@@ -173,21 +173,61 @@ footer {
 
 /* DIALOG */
 dialog {
-	/* centers the fixed-position modal */
 	position: fixed;
 	inset: 0;
 	margin: auto;
 
-	/* keep a gap around the modal; scrolling content inside it. */
 	inline-size: 90%;
 	max-inline-size: 40rem;
 	max-block-size: 85vh;
 	overflow-y: auto;
 
-	padding-block: calc(var(--spacing-md) * 1.5);
+	padding: 0;
+	background-color: var(--color-bg);
+	color: var(--color-fg);
+
+	border: var(--border-width) solid var(--color-fg);
+	}
+
+/* MODAL TITLE */
+dialog .modal-title {
+	background-color: var(--color-bg);
+
 	padding-inline: var(--spacing-md);
+	padding-block: calc(var(--spacing-md) * 2);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* MODAL CONTENT */
+dialog .modal-content {
+	padding-inline: var(--spacing-md);
+	padding-block: var(--spacing-md);
+	background-color: var(--color-bg);
+}
+
+/* MODAL HEADER */
+dialog .modal-header {
 	background-color: var(--color-chapter);
-	padding-block-start: calc(var(--spacing-md) * 1.5);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding-block: var(--spacing-sm);
+    padding-inline: var(--spacing-md);
+
+	position: sticky;
+	z-index: 10;
+
+	border-bottom: var(--border-width) solid var(--color-fg);
+
+	font-size: var(--size-small);
+	font-weight: var(--text-bd);
+	line-height: 1;
 }
 
 /* Dim the page behind the modal，60% black */
@@ -208,6 +248,7 @@ dialog h2 {
 	text-box-edge: cap alphabetic;
 	text-box-trim: trim-both;
 	margin-inline: -0.06em;
+	align-self: stretch;
 }
 
 /* Coordinates above the modal title. */
@@ -322,13 +363,13 @@ dialog nobr {
 
 /* MEDIA PLACEHOLDERS */
 .image, .gif, .video {
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: var(--color-chapter);
 	color: black;
 	border: var(--border-width) solid black;
 	padding-block: var(--spacing-sm);
 	padding-inline: var(--spacing-md);
 	font-family: var(--font-dspl);
-	line-height: 1.4;
+	line-height: 1.5;
 	overflow-wrap: anywhere;
 }
 
