@@ -225,6 +225,22 @@ dialog > button {
 	justify-content: center;
 }
 
+/* Shared style for all quotes in chapter. */
+dialog blockquote {
+	padding-inline-start: var(--spacing-sm);
+	border-inline-start: var(--border-width) solid var(--color-fg);
+	margin-block: var(--spacing-md);
+	}
+
+dialog blockquote.callout {
+	font-family: var(--font-dspl);
+	font-size: var(--size-h1);
+	font-weight: var(--text-bd);
+	text-align: center;
+	border-inline-start: 0;
+	padding-inline-start: 0;
+}
+
 /* CHAPTER COLOR */
 #the-aspirin { --color-chapter: var(--color-modal-1); }
 #beyond-the-box { --color-chapter: var(--color-modal-2); }
