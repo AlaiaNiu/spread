@@ -226,9 +226,11 @@ dialog p {
 }
 
 dialog > button {
-	position: absolute;
-	inset-block-start: var(--spacing-sm);
-	inset-inline-end: var(--spacing-sm);
+	position: sticky;
+	inset-block-start: 0rem;
+	inset-inline-end: 0rem;
+
+	/* button box */
 	inline-size: var(--spacing-md);
 	block-size: var(--spacing-md);
 	border: var(--border-width) solid var(--color-fg);
