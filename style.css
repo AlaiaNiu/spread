@@ -265,6 +265,10 @@ dialog a {
 	text-decoration: underline;
 }
 
+dialog nobr {
+	white-space: nowrap;
+}
+
 /* CHAPTER COLOR */
 #the-aspirin { --color-chapter: var(--color-modal-1); }
 #beyond-the-box { --color-chapter: var(--color-modal-2); }
