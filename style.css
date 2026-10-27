@@ -70,6 +70,9 @@ header h1 {
 	line-height: var(--spacing-sm);
 	border-block-start: var(--border-width) solid var(--color-fg);
 	padding-block-start: var(--spacing-xs);
+	text-box-edge: cap alphabetic;
+	text-box-trim: trim-both;
+	margin-inline: -0.06em;
 }
 
 header p {
@@ -202,6 +205,9 @@ dialog h2 {
 	margin-block-end: var(--spacing-md);
 	padding-block-end: calc(var(--spacing-md) * 1.5);
 	border-block-end: var(--border-width) solid var(--color-fg);
+	text-box-edge: cap alphabetic;
+	text-box-trim: trim-both;
+	margin-inline: -0.06em;
 }
 
 /* Coordinates above the modal title. */
