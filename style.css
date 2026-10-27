@@ -250,6 +250,10 @@ dialog blockquote.callout {
 	padding-inline-start: 0;
 }
 
+dialog em {
+	font-style: italic;
+}
+
 /* CHAPTER COLOR */
 #the-aspirin { --color-chapter: var(--color-modal-1); }
 #beyond-the-box { --color-chapter: var(--color-modal-2); }
