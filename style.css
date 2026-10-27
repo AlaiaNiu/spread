@@ -221,6 +221,7 @@ dialog .modal-header {
     padding-inline: var(--spacing-md);
 
 	position: sticky;
+	inset-block-start: 0;
 	z-index: 10;
 
 	border-bottom: var(--border-width) solid var(--color-fg);
