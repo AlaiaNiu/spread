@@ -64,7 +64,7 @@ header {
 }
 
 header h1 {
-	font-family: var(--font-body);
+	font-family: "Space Mono", monospace;
 	font-size: var(--size-h2);
 	font-weight: var(--text-bd);
 	line-height: 1;
@@ -99,14 +99,20 @@ main::before {
 	position: absolute;
 	inset: 0;
 	z-index: -1;
-	display: grid;
-	place-content: center;
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	padding-block-start: var(--spacing-md);
+
 	text-align: center;
+	font-family: "Space Mono", monospace;
 	font-size: 5rem;
 	line-height: 0.85;
 	font-weight: var(--text-bd);
 	color: rgb(0 0 0 / 0.05);
 }
+
 
 /* NAVIGATION */
 nav ol {
