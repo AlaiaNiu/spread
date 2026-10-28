@@ -35,6 +35,8 @@
 	--border-width: 0.125rem;
 
 	--color-backdrop: rgb(0 0 0 / 0.8);
+
+
 }
 
 /* PAGE */
@@ -409,7 +411,6 @@ dialog nobr {
 
 }
 
-
 /* DESKTOP */
 @media (width >= 1100px) {
 	main::before {
@@ -462,5 +463,27 @@ dialog nobr {
 	nav li:nth-child(6) {
 		grid-column: 6;
 		grid-row: 6;
+	}
+}
+
+@media print {
+	:root {
+		--color-modal-1: var(--color-bg);
+		--color-modal-2: var(--color-bg);
+		--color-modal-3: var(--color-bg);
+		--color-modal-4: var(--color-bg);
+		--color-modal-5: var(--color-bg);
+		--color-modal-6: var(--color-bg);
+		
+		--spacing: 18pt; /* Appropriate absolute units! */
+
+		print-color-adjust: exact; /* Print backgrounds, etc! */
+	}
+
+	/* And maybe we have some `print`-only properties. */
+	section {
+		border: calc(var(--spacing) / 3) solid black;
+		font-family: serif;
+		padding: 0.5in;
 	}
 }
