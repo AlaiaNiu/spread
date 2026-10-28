@@ -67,7 +67,7 @@ header h1 {
 	font-family: var(--font-body);
 	font-size: var(--size-h2);
 	font-weight: var(--text-bd);
-	line-height: var(--spacing-md);
+	line-height: 1;
 	padding-block-start: var(--spacing-xs);
 	text-box-edge: cap alphabetic;
 	text-box-trim: trim-both;
@@ -369,6 +369,7 @@ dialog nobr {
 
 #made-to-move h2 {
 	font-family:'Boldonse', sans-serif;
+	line-height: 1.5;
 }
 
 #human-agency {
