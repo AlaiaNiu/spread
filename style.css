@@ -95,7 +95,12 @@ main {
 	overflow: hidden;
 }
 
-main::before {
+nav {
+	position: relative;
+	isolation: isolate;
+}
+
+nav::before {
 	content: "WHAT\A SCREENS\A WANT";
 	white-space: pre;
 	position: absolute;
@@ -103,18 +108,16 @@ main::before {
 	z-index: -1;
 
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: center;
-	padding-block-start: var(--spacing-md);
 
 	text-align: center;
 	font-family: "Space Mono", monospace;
 	font-size: 5rem;
-	line-height: 0.85;
+	line-height: 1;
 	font-weight: var(--text-bd);
 	color: rgb(0 0 0 / 0.05);
 }
-
 
 /* NAVIGATION */
 nav ol {
@@ -399,10 +402,9 @@ dialog nobr {
 }
 
 @media (width >= 600px) {
-	main::before {
+	nav::before {
 		font-size: 10rem;
 	}
-
 	dialog {
 		inline-size: 90%;
 		max-inline-size: 40rem;
@@ -413,7 +415,7 @@ dialog nobr {
 
 /* DESKTOP */
 @media (width >= 1100px) {
-	main::before {
+	nav::before {
 		font-size: 15rem;
 	}
 
@@ -474,7 +476,7 @@ dialog nobr {
 		--color-modal-4: var(--color-bg);
 		--color-modal-5: var(--color-bg);
 		--color-modal-6: var(--color-bg);
-		
+
 		--spacing: 18pt; /* Appropriate absolute units! */
 
 		print-color-adjust: exact; /* Print backgrounds, etc! */
