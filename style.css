@@ -378,6 +378,13 @@ dialog nobr {
 		/* 6 x 6 grid, each item sits on the diagonal below */
 		grid-template-columns: repeat(6, 1fr);
 		grid-template-rows: repeat(6, 1fr);
+		gap: 1px;               /* line thickness */
+		background-color: black; /* line colour */
+		border: 1px solid black; /* outer edge */
+	}
+
+	nav ol > * {
+		background-color: white;
 	}
 
 	nav li {
