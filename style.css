@@ -103,9 +103,9 @@ main::before {
 	place-content: center;
 	text-align: center;
 	font-size: 5rem;
-	line-height: 1;
+	line-height: 0.85;
 	font-weight: var(--text-bd);
-	color: rgb(0 0 0 / 0.1);
+	color: rgb(0 0 0 / 0.05);
 }
 
 /* NAVIGATION */
@@ -395,6 +395,13 @@ dialog nobr {
 	main::before {
 		font-size: 10rem;
 	}
+
+	dialog {
+		inline-size: 90%;
+		max-inline-size: 40rem;
+		max-block-size: 85vh;
+	}
+
 }
 
 
@@ -402,12 +409,6 @@ dialog nobr {
 @media (width >= 1100px) {
 	main::before {
 		font-size: 15rem;
-	}
-
-	dialog {
-		inline-size: 90%;
-		max-inline-size: 40rem;
-		max-block-size: 85vh;
 	}
 
 	nav ol {
