@@ -238,7 +238,7 @@ dialog {
 		padding-inline: var(--spacing-md);
 		padding-block: var(--spacing-md);
 		background-color: var(--color-bg);
-		border-bottom: var(--border-width) solid var(--color-fg);
+			border-bottom: var(--border-width) solid var(--color-fg);
 	}
 
 	/* MODAL HEADER */
@@ -513,4 +513,17 @@ dialog {
 			color: var(--color-bg);
 		}
 	}
-}
+
+	dialog {
+		position: relative;
+		margin: auto;
+		inline-size: 100%;
+		block-size: 100dvh;
+		overflow-y: visible;
+
+		padding: 0;
+		background-color: var(--color-bg);
+		color: var(--color-fg);
+
+		border: none;
+	}
