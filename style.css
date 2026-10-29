@@ -478,6 +478,8 @@ dialog {
 		--color-modal-5: var(--color-bg);
 		--color-modal-6: var(--color-bg);
 
+		--color-backdrop: var(--color-bg);
+
 		--spacing: 18pt; /* Appropriate absolute units! */
 
 		print-color-adjust: exact; /* Print backgrounds, etc! */
