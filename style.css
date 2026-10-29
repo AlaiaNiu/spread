@@ -2,6 +2,7 @@
 :root {
 	--color-fg: black;
 	--color-bg: white;
+	--color-gy: #e0e0e0;
 
 
 	/* chapter colors for modal */
@@ -112,9 +113,9 @@ nav {
 		text-align: center;
 		font-family: "Space Mono", monospace;
 		font-size: 5rem;
-		line-height: 1;
+		line-height: 0.8;
 		font-weight: var(--text-bd);
-		color: rgb(0 0 0 / 0.05);
+		color: rgb(0 0 0 / 0.03);
 	}
 
 	/* NAVIGATION */
@@ -125,17 +126,17 @@ nav {
 		padding-block-end: var(--spacing-sm);
 		background-image:
 		repeating-linear-gradient(
-		to bottom,
-		transparent 0 119px,
-		#e0e0e0 119px 120px
+			to bottom,
+			transparent 0 119px,
+			var(--color-gy) 119px 120px
 		),
 		repeating-linear-gradient(
-		to right,
-		transparent 0 119px,
-		#e0e0e0 119px 120px
+			to right,
+			transparent 0 119px,
+			var(--color-gy) 119px 120px
 		);
-		border-block: 1px solid #e0e0e0;
-		border-inline: 1px solid #e0e0e0;
+		border-block: 1px solid var(--color-gy);
+		border-inline: 1px solid var(--color-gy);
 	}
 
 
@@ -490,5 +491,11 @@ dialog {
 		border: calc(var(--spacing) / 3) solid black;
 		font-family: serif;
 		padding: 0.5in;
+	}
+
+	nav {
+	&::before {
+		color: var(--color-bg);
+	}
 	}
 }
