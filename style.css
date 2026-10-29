@@ -94,6 +94,11 @@ main {
 	overflow: hidden;
 }
 
+strong{
+	font-weight: var(--text-bd);
+	text-transform: uppercase;
+}
+
 nav {
 	position: relative;
 	isolation: isolate;
