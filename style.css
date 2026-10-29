@@ -1,3 +1,9 @@
+/*	Approach discussed with Claude (Anthropic)
+	see notes/claude-sticky-header.txt
+	see notes/claude-chapter-navigation.txt
+	links/https://claude.ai/share/1795006b-8e3a-43a6-8cf8-d43739e6ae6c
+*/
+
 /* VARIABLES */
 :root {
 	--color-fg: black;
@@ -527,3 +533,4 @@ dialog {
 
 		border: none;
 	}
+}
