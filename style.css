@@ -238,6 +238,7 @@ dialog {
 		padding-inline: var(--spacing-md);
 		padding-block: var(--spacing-md);
 		background-color: var(--color-bg);
+		border-bottom: var(--border-width) solid var(--color-fg);
 	}
 
 	/* MODAL HEADER */
@@ -260,6 +261,14 @@ dialog {
 		font-size: var(--size-small);
 		font-weight: var(--text-bd);
 		line-height: 1;
+	}
+
+	/* MODAL FOOTNOTE */
+	.modal-footnote {
+		padding-inline: var(--spacing-md);
+		padding-block-start: var(--spacing-sm);
+		text-align: center;
+		font-size: var(--size-small);
 	}
 
 	/* Dim the page behind the modal，60% black */
@@ -340,7 +349,7 @@ dialog {
 	}
 
 	nobr {
-	white-space: nowrap;
+		white-space: nowrap;
 	}
 }
 
