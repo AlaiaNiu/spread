@@ -348,51 +348,52 @@ dialog {
 /* CHAPTER COLOR */
 #the-aspirin {
 	--color-chapter: var(--color-modal-1);
-}
 
-#the-aspirin h2{
-	font-family: var(--font-dspl), monospace;
+	h2{
+		font-family: var(--font-dspl), monospace;
+	}
 }
 
 #beyond-the-box {
 	--color-chapter: var(--color-modal-2);
-}
 
-#beyond-the-box h2 {
-	font-family:'Rubik Doodle Shadow', sans-serif;
+	h2 {
+		font-family:'Rubik Doodle Shadow', sans-serif;
+	}
+
 }
 
 #faster-horse {
 	--color-chapter: var(--color-modal-3);
-}
 
-#faster-horse h2 {
-	font-family:'Instrument Serif', serif;
+	h2 {
+		font-family:'Instrument Serif', serif;
+	}
 }
 
 #what-screens-want {
 	--color-chapter: var(--color-modal-4);
-}
 
-#what-screens-want h2 {
-	font-family:'Pixelify Sans', sans-serif;
+	h2 {
+		font-family:'Pixelify Sans', sans-serif;
+	}
 }
 
 #made-to-move {
 	--color-chapter: var(--color-modal-5);
-}
 
-#made-to-move h2 {
-	font-family:'Boldonse', sans-serif;
-	line-height: 1.5;
+	h2 {
+		font-family:'Boldonse', sans-serif;
+		line-height: 1.5;
+	}
 }
 
 #human-agency {
 	--color-chapter: var(--color-modal-6);
-}
 
-#human-agency h2 {
-	font-family: var(--font-body), sans-serif;
+	h2 {
+		font-family: var(--font-body), sans-serif;
+	}
 }
 
 /* MEDIA PLACEHOLDERS */
